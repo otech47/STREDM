@@ -1,21 +1,141 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Stredm</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-
+	<link href="css/custom.css" rel="stylesheet" media="screen">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="homepage">
+  <body class="home-page">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<div class="page-wrapper container">
+		<header>
+			<div class="top-menu">
+				<div class="row">
+					<div class="site-name col-md-6 col-md-offset-1">
+						<div><a href="stredm.com"></a>STREDM</div>
+					</div>
+					<div class="links-menu col-md-5">
+						<div class="row">
+							<div class="link col-md-4"><a href="/events.html" >Events</a></div>
+							<div class="link col-md-4"><a href="/about.html" >About</a></div>
+							<div class="link col-md-4"><a href="http://stredm.tumblr.com" >Blog</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="content-wrapper">
+			<div class="content-bg row">
+				<div class="stredming-container col-md-9">
+				</div>
+				<div class="stredm-select-container col-md-3">
+					<div class="stredm-panel">
+						<div class="stredm-panel-container">
+							<div class="select-container">
+								<div class="event-select">
+									<p>EVENT: </p>
+									<form action="../scripts/stredm.php" method="post">
+									<div id="main-selector">
+										<select name="event">
+											<option value="blank">--None Selected--</option>
+											<option value="bwland2013">Beyond Wonderland</option>
+											<option value="edclv2013">EDC Las Vegas 2013</option>
+											<option value="ezoo2013">Electric Zoo 2013</option>
+											<option value="emix">Essential Mix</option>
+											<option value="tland2013">Tomorrowland 2013</option>
+											<option value="umf2013">Ultra Music Festival 2013</option>
+											<option value="tmwworld13">Tomorrow World 2013</option>
+										</select>
+									</div>
+									</form>
+								</div>
+								<div class="artist-select">
+									<p>ARTIST:</p>
+									<form action="../scripts/stredm.php" method="post">
+									<div id="main-selector">
+										<select name="artist">
+											<option value="blank">--None Selected--</option>
+											<option value="atrak">A-Trak</option>
+											<option value="amuzik">Aarab Muzik</option>
+											<option value="aandb">Above & Beyond</option>
+											<option value="afrojack">Afrojack</option>
+											<option value="alesso">Alesso</option>
+											<option value="avbuuren">Armin Van Buuren</option>
+											<option value="adepartment">Art Department</option>
+											<option value="arty">Arty</option>
+											<option value="avicii">Avicii</option>
+											<option value="axwell">Axwell</option>
+											<option value="bbenassi">Benny Benassi</option>
+											<option value="bplayers">Bingo Players</option>
+											<option value="bsafari">Bro Safari</option>
+											<option value="carnage">Carnage</option>
+											<option value="charris">Calvin Harris</option>
+											<option value="cazzette">Cazzette</option>
+											<option value="dada">Dada Life</option>
+											<option value="dberlin">Dash Berlin</option>
+											<option value="dguetta">David Guetta</option>
+											<option value="deadmau5">Deadmau5</option>
+											<option value="dfrancis">Dillon Francis</option>
+											<option value="disclosure">Disclosure</option>
+											<option value="dvegasandlmike">Dimitri Vegas and Like Mike</option>
+											<option value="djsnake">Dj Snake</option>
+											<option value="dblood">Dog Blood</option>
+											<option value="dvbbs">DVBBS</option>
+											<option value="flegrand">Fedde Le Grand</option>
+											<option value="fcorsten">Ferry Corsten</option>
+											<option value="hardwell">Hardwell</option>
+											<option value="jdahlback">John Dahlback</option>
+											<option value="kaskade">Kaskade</option>
+											<option value="kparty">Knife Party</option>
+											<option value="lbluke">Laidback Luke</option>
+											<option value="mschulz">Markus Schulz</option>
+											<option value="msolveig">Martin Solveig</option>
+											<option value="mpage">Morgan Page</option>
+											<option value="nromero">Nicky Romero</option>
+											<option value="plights">Pretty Lights</option>
+											<option value="quintino">Quintino</option>
+											<option value="r3hab">R3hab</option>
+											<option value="randf">Rebecca and Fiona</option>
+											<option value="svdoorn">Sander Van Doorn</option>
+											<option value="showtek">Showtek</option>
+											<option value="sangello">Steve Angello</option>
+											<option value="saoki">Steve Aoki</option>
+											<option value="shmafia">Swedish House Mafia</option>
+											<option value="singrosso">Sebastian Ingrosso</option>
+											<option value="tgold">Thomas Gold</option>
+											<option value="tiesto">Tiesto</option>
+											<option value="ttrash">Tommy Trash</option>
+											<option value="tritonal">Tritonal</option>
+											<option value="wandw">W&W</option>
+											<option value="zdead">Zeds Dead</option>
+										</select>
+									</div>
+									</form>
+								</div>
+							</div>
+							<div class="instructions-container">
+								<div class="text-container">
+									<p>You love sets. You hate searching.<br> Fill both fields in for a specific set.<br> Fill one field in for a random set.</p>
+								</div>
+							</div>
+							<div class="button-container">
+								<button class="stredm-panel-button">STREDM</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
   </body>
 </html>
