@@ -15,13 +15,14 @@ body
 .page-wrapper
 {
 	height:100%;
-	width:100%;
+	width:90%;
+	margin:0% 5%;
 }
 
 .top-menu 
 {
     font-size: 300%;
-    margin-top: 1%;
+    margin: 0;
 	padding-top: 4%;
 	background-color: rgba(255,255,255,0.85);
 	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
