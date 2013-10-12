@@ -53,6 +53,7 @@ body
 
 .content-wrapper
 {
+	position: relative;
 	width: 100%;
     padding-bottom: 40%;
 	background-image:url('../images/ContentBackground.png');
@@ -71,7 +72,7 @@ body
 
 .stredm-select-container
 {
-	padding:2% 3% 2% 0;
+	padding:5px 0 5px 5px;
 	height:100%;
 }
 
