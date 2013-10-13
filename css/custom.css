@@ -80,3 +80,8 @@ body
 	background-color: rgba(0,0,0,.9);
 	height:100%;
 }
+@font-face 
+{
+	font-family:'test';
+	src:url('test.otf');
+}
