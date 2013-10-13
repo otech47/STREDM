@@ -10,7 +10,7 @@ if (!$con)
 $event = $_POST['event'];
 $artist = $_POST['artist'];
 
-if($event == "blank")
+if($event == "")
 {
 	$eventArray = array("blankevent");
 	$isEventEmpty = true;
