@@ -55,7 +55,7 @@ body
 {
 	position: relative;
 	width: 100%;
-	padding-bottom: 38%;
+	height:75%;
 	background-image: url('../images/ContentBackground.png');
 	background-size: 105% 105%;
 	background-position: -110% 0%;
