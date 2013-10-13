@@ -97,11 +97,25 @@ body
 {
 	margin:0;
 }
+.select-text
+{
+	padding-right:0;
+	color:white;
+}
+.select-form
+{
+	padding:0;
+}
 .instructions-container
 {
+	color: #FFFFFF;
+    line-height: 250%;
+    margin: 23% 0;
+    text-align: center;
 }
 .button-container
 {
+	text-align:center;
 }
 @font-family-base 
 {
