@@ -34,16 +34,19 @@
 				</div>
 			</div>
 		</header>
-		<div class="content-wrapper">
+		<div class="content-wrapper container">
 			<div class="content-bg row">
 				<div class="stredming-container col-md-9">
 				</div>
-				<div class="stredm-select-container col-md-3">
+				<div class="stredm-panel-container col-md-3">
 					<div class="stredm-panel">
-						<div class="stredm-panel-container">
+						<div class="stredm-select-container">
 							<div class="select-container">
-								<div class="event-select">
-									<p>EVENT: </p>
+								<div class="event-select row">
+									<div class="select-text col-md-4">
+										<p>EVENT: </p>
+									</div>
+									<div class="select-form col-md-8">
 									<form action="../scripts/stredm.php" method="post">
 									<div id="main-selector">
 										<select name="event">
@@ -58,9 +61,13 @@
 										</select>
 									</div>
 									</form>
+									</div>
 								</div>
-								<div class="artist-select">
-									<p>ARTIST:</p>
+								<div class="artist-select row">
+									<div class="select-text col-md-4">
+										<p>ARTIST:</p>
+									</div>
+									<div class="select-form col-md-8">
 									<form action="../scripts/stredm.php" method="post">
 									<div id="main-selector">
 										<select name="artist">
@@ -154,6 +161,7 @@
 										</select>
 									</div>
 									</form>
+									</div>
 								</div>
 							</div>
 							<div class="instructions-container">

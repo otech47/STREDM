@@ -69,10 +69,11 @@ body
 	height:100%;
 }
 
-.stredm-select-container
+.stredm-panel-container
 {
-	padding: 2% 0.3% 1% 1%;
+	padding: 1% 0% 0% 0%;
 	height: 98%;
+	right: 1%;
 }
 
 .stredm-panel
@@ -80,26 +81,27 @@ body
 	background-color: rgba(0,0,0,.9);
 	height:100%;
 }
-.stredm-panel-container
+.stredm-select-container
 {
 	height: 100%;
-	display: flex;
-	flex-direction: column;
 }
 .select-container
 {
-	flex-direction: column;
-	flex:6;
+}
+.event-select
+{
+	margin:0;
+	padding:10% 0%;
+}
+.artist-select
+{
+	margin:0;
 }
 .instructions-container
 {
-	flex-direction: column;
-	flex:8;
 }
 .button-container
 {
-	flex-direction: column;
-	flex:3;
 }
 @font-family-base 
 {
