@@ -55,12 +55,11 @@ body
 {
 	position: relative;
 	width: 100%;
-    padding-bottom: 40%;
-	background-image:url('../images/ContentBackground.png');
+	padding-bottom: 38%;
+	background-image: url('../images/ContentBackground.png');
 	background-size: 105% 105%;
 	background-position: -110% 0%;
-	margin-top: 5px;
-
+	margin-top: 2.5%;
 }
 
 .content-bg
@@ -72,8 +71,8 @@ body
 
 .stredm-select-container
 {
-	padding:5px 0 5px 5px;
-	height:100%;
+	padding: 2% 0.3% 1% 1%;
+	height: 98%;
 }
 
 .stredm-panel
