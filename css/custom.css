@@ -135,8 +135,9 @@ body
 }
 .select-text
 {
-	padding-right:0;
-	color:white;
+	padding-right: 0;
+	color: white;
+	font-size: 152%
 }
 .select-form
 {
@@ -145,9 +146,10 @@ body
 .instructions-container
 {
 	color: #FFFFFF;
-    line-height: 250%;
-    margin: 23% 0;
-    text-align: center;
+	line-height: 356%;
+	margin: 2% 0% 9% 0%;
+	text-align: center;
+	font-size: 124.5%;
 }
 .button-container
 {
