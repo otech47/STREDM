@@ -1,7 +1,7 @@
 $(document).ready( function() {
 	$( function() {
 		var eventTags = [
-		"Beyond Wonderland",
+		"Beyond Wonderland 2013",
 		"EDC Las Vegas 2013",
 		"Electric Zoo 2013",
 		"Essential Mix",
@@ -106,5 +106,25 @@ $(document).ready( function() {
 			source: artistTags
 		});
 	});
-	
+	$("button.stredm-panel-button").click(function(){
+		var eventSelection = $("input[id='events']").val();
+		var artistSelection = $("input[id='artists']").val();
+		var postdata = {
+			event:eventSelection,
+			artist:artistSelection
+			};
+		$("div.stredming").slideDown(100);
+		$("div.stredming-results").empty();
+		jQuery.ajax({
+			type: "POST",
+			url: '../scripts/request.php',
+			data: postdata,
+			success: function(data) 
+			{
+				// var result = data.substring(1, data.length-1);
+				var result = data;
+				jQuery("div.stredming-results").append("<div class='result'>"+result+"</div>");
+			}
+		});
+	});
 });
