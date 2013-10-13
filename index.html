@@ -11,12 +11,16 @@
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
+	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.css">
   </head>
   <body class="home-page">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/jquery-ui-1.10.3.custom.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
 	<div class="page-wrapper">
 		<header>
 			<div class="top-menu">
@@ -48,17 +52,8 @@
 									</div>
 									<div class="select-form col-md-8">
 									<form action="../scripts/stredm.php" method="post">
-									<div id="main-selector">
-										<select name="event">
-											<option value="blank">--None Selected--</option>
-											<option value="bwland2013">Beyond Wonderland</option>
-											<option value="edclv2013">EDC Las Vegas 2013</option>
-											<option value="ezoo2013">Electric Zoo 2013</option>
-											<option value="emix">Essential Mix</option>
-											<option value="tland2013">Tomorrowland 2013</option>
-											<option value="umf2013">Ultra Music Festival 2013</option>
-											<option value="tmwworld13">Tomorrow World 2013</option>
-										</select>
+									<div id="main-selector" class="ui-widget">
+										<input type="text" id="events" />
 									</div>
 									</form>
 									</div>
@@ -69,96 +64,8 @@
 									</div>
 									<div class="select-form col-md-8">
 									<form action="../scripts/stredm.php" method="post">
-									<div id="main-selector">
-										<select name="artist">
-											<option value="blank">--None Selected--</option>
-											<option value="12thplanet">12th Planet</option>
-											<option value="atrak">A-Trak</option>
-											<option value="amuzik">Aarab Muzik</option>
-											<option value="aandb">Above & Beyond</option>
-											<option value="aclub">Adventure Club</option>
-											<option value="afrojack">Afrojack</option>
-											<option value="alesso">Alesso</option>
-											<option value="avbuuren">Armin Van Buuren</option>
-											<option value="adepartment">Art Department</option>
-											<option value="arty">Arty</option>
-											<option value="atb">ATB</option>
-											<option value="avicii">Avicii</option>
-											<option value="axwell">Axwell</option>
-											<option value="bbenassi">Benny Benassi</option>
-											<option value="bgigantic">Big Gigantic</option>
-											<option value="bplayers">Bingo Players</option>
-											<option value="botnek">Botnek</option>
-											<option value="bsafari">Bro Safari</option>
-											<option value="charris">Calvin Harris</option>
-											<option value="ccox">Carl Cox</option>
-											<option value="carnage">Carnage</option>
-											<option value="cazzette">Cazzette</option>
-											<option value="cgervais">Cedric Gervais</option>
-											<optoin value="clockwork">Clockwork</option>
-											<option value="dada">Dada Life</option>
-											<option value="dberlin">Dash Berlin</option>
-											<option value="dguetta">David Guetta</option>
-											<option value="deadmau5">Deadmau5</option>
-											<option value="dfrancis">Dillon Francis</option>
-											<option value="diplo">Diplo</option>
-											<option value="disclosure">Disclosure</option>
-											<option value="dsouth">Dirty South</option>
-											<option value="dvegasandlmike">Dimitri Vegas and Like Mike</option>
-											<option value="djsnake">Dj Snake</option>
-											<option value="dblood">Dog Blood</option>
-											<option value="dvbbs">DVBBS</option>
-											<option value="dyro">Dyro</option>
-											<option value="eprydz">Eric Prydz</option>
-											<option value="fbslim">Fat Boy Slim</option>
-											<option value="feedme">Feed Me</option>
-											<option value="flegrand">Fedde Le Grand</option>
-											<option value="fcorsten">Ferry Corsten</option>
-											<option value="floss">Flosstradamus</option>
-											<option value="fpavillion">Flux Pavilion</option>
-											<option value="gemery">Gareth Emery</option>
-											<option value="hardwell">Hardwell</option>
-											<option value="hhunterz">Headhunterz</option>
-											<option value="jdahlback">John Dahlback</option>
-											<option value="kaskade">Kaskade</option>
-											<option value="kparty">Knife Party</option>
-											<optoin value="krewella">Krewella</option>
-											<option value="lbluke">Laidback Luke</option>
-											<option value="ldice">Loco Dice</option>
-											<option value="luciano">Luciano</option>
-											<option value="madeon">Madeon</option>
-											<option value="mlazer">Major Lazer</option>
-											<option value="mschulz">Markus Schulz</option>
-											<option value="msolveig">Martin Solveig</option>
-											<option value="matzo">Mat Zo</option>
-											<option value="nromero">Nicky Romero</option>
-											<option value="pvdyk">Paul Van Dyk</option>
-											<option value="ptong">Pete Tong</option>
-											<option value="probinson">Porter Robinson</option>
-											<option value="plights">Pretty Lights</option>
-											<option value="quintino">Quintino</option>
-											<option value="r3hab">R3hab</option>
-											<option value="randf">Rebecca and Fiona</option>
-											<option value="rhawtin">Richie Hawtin</option>
-											<option value="rlgrime">R.L Grime</option>
-											<option value="rusko">Rusko</option>
-											<option value="svdoorn">Sander Van Doorn</option>
-											<option value="showtek">Showtek</option>
-											<option value="sstone">Solar Stone</option>
-											<option value="sangello">Steve Angello</option>
-											<option value="saoki">Steve Aoki</option>
-											<option value="shmafia">Swedish House Mafia</option>
-											<option value="singrosso">Sebastian Ingrosso</option>
-											<option value="tgold">Thomas Gold</option>
-											<option value="tiesto">Tiesto</option>
-											<option value="ttrash">Tommy Trash</option>
-											<option value="tritonal">Tritonal</option>
-											<option value="Umek">Umek</option>
-											<option value="wandw">W&W</option>
-											<option value"wgartner">Wolfgang Gartner</option>
-											<option value="zedd">Zedd</option>
-											<option value="zdead">Zeds Dead</option>
-										</select>
+									<div id="main-selector"  class="ui-widget">
+										<input type="text" id="artists" />
 									</div>
 									</form>
 									</div>

@@ -122,3 +122,13 @@ body
 	font-family:'test';
 	src:url('test.otf');
 }
+.ui-autocomplete {
+	max-height: 200px;
+	max-width: 157px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+input[type=text]
+{
+	
+}
