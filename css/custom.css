@@ -68,7 +68,38 @@ body
 	width: 100%;
 	height:100%;
 }
-
+.stredming-container
+{
+	height: 98%;
+	padding: 1% 1% 0;
+	display:none;
+}
+.stredming
+{
+	background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+}
+.stredming-header
+{
+	color: white;
+}
+.stredming-header h1
+{
+	margin:0;
+	padding:4% 5%;
+}
+.stredming-results
+{
+	height:100%;
+}
+.result
+{
+	height:50%;
+}
+.stredm-logo
+{
+	height:98%;
+}
 .stredm-panel-container
 {
 	padding: 1% 0% 0% 0%;
