@@ -27,7 +27,7 @@ else
 	}
 }
 
-if($artist == "blank")
+if($artist == "")
 {
 	$artistArray = array("blankartist");
 	$isArtistEmpty = true;
