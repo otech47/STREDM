@@ -83,7 +83,7 @@ if(!empty($resultArray))
 else
 {
 	$returnResult = "<p>No results found";
-	echo json_encode($returnResult);
+	echo $returnResult;
 }
 
 ?>
