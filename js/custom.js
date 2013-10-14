@@ -121,7 +121,7 @@ $(document).ready( function() {
 			data: postdata,
 			success: function(data) 
 			{
-				var result = data.substring(1, data.length-1);
+				var result = data;
 				jQuery("div.stredming-results").append("<div class='result'>"+result+"</div>");
 			}
 		});
