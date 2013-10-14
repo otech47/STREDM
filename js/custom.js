@@ -74,6 +74,8 @@ $(document).ready( function() {
 		"Markus Schulz",
 		"Martin Solveig",
 		"Mat Zo",
+		"Nero",
+		"Nervo",
 		"Nicky Romero",
 		"Paul Van Dyk",
 		"Pete Tong",
