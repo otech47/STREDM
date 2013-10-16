@@ -138,6 +138,55 @@ $(document).ready( function() {
 	$("input[id='events']").blur(function(){
 		getEventTags();
 	});
+<<<<<<< HEAD
+=======
+	var getEventTags = function() {
+		var artistSelection = $("input[id='artists']").val();
+		var postdata = { artist:artistSelection };
+		jQuery.ajax({
+			type: "POST",
+			url: '../scripts/eventTags.php',
+			data: postdata,
+			success: function(data) 
+			{
+				var autocompleteData = JSON.parse(data);
+				$("#events").autocomplete({
+					source: autocompleteData
+				});
+				$( "#events-xs" ).autocomplete({
+					source: autocompleteData
+				});
+			}
+		});
+	};
+	getEventTags();
+	$("input[id='events']").blur(function(){
+		getEventTags();
+	});
+	var getEventTags = function() {
+		var artistSelection = $("input[id='artists']").val();
+		var postdata = { artist:artistSelection };
+		jQuery.ajax({
+			type: "POST",
+			url: '../scripts/eventTags.php',
+			data: postdata,
+			success: function(data) 
+			{
+				var autocompleteData = JSON.parse(data);
+				$("#events").autocomplete({
+					source: autocompleteData
+				});
+				$( "#events-xs" ).autocomplete({
+					source: autocompleteData
+				});
+			}
+		});
+	};
+	getEventTags();
+	$("input[id='events']").blur(function(){
+		getEventTags();
+	});
+>>>>>>> 526e4ad49fca75e3f5dc3a18ea767751db513d95
 	var getArtistTags = function() {
 		var eventSelection = $("#artists").val();
 		var postdata = { event:eventSelection };
