@@ -12,9 +12,6 @@ $(document).ready( function() {
 		$( "#events" ).autocomplete({
 			source: eventTags
 		});
-		$( "#events-xs" ).autocomplete({
-			source: eventTags
-		});
 	});
 	$( function() {
 		var artistTags = [
@@ -119,9 +116,6 @@ $(document).ready( function() {
 		"Zeds Dead"
 		];
 		$( "#artists" ).autocomplete({
-			source: artistTags
-		});
-		$( "#artists-xs" ).autocomplete({
 			source: artistTags
 		});
 	});
