@@ -11,7 +11,12 @@ body
 	background-repeat:no-repeat;
 	height:100%;
 }
-
+.scroll-wrapper
+{
+	height:100%;
+	width:100%;
+	overflow-y:scroll;
+}
 .page-wrapper
 {
 	height:100%;
@@ -129,17 +134,18 @@ body
 .event-select
 {
 	margin:0;
-	padding:10% 0%;
+	padding:5% 0%;
 }
 .artist-select
 {
 	margin:0;
+	padding:5% 0%;
 }
 .select-text
 {
-	padding-right: 0;
+	padding: 0;
 	color: white;
-	font-size: 152%
+	font-size: 152%;
 }
 .select-form
 {
@@ -170,4 +176,38 @@ body
 input[type=text]
 {
 	
+}
+
+@media only screen and (max-width: 768px) 
+{
+
+.content-wrapper
+{
+	background-position: -198% 65%;
+	background-size: 170% 80%;
+}
+.stredm-panel-container
+{
+	right:0%;
+	padding: 1% 1% 0;
+}
+.stredming-container
+{
+	display:none;
+	height:50%;
+}
+.stredm-logo
+{
+	display:none;
+}
+.stredming
+{
+	margin-right:0;
+}
+.result
+{
+	height:85%;
+}
+
+
 }
