@@ -81,9 +81,10 @@ body
 .stredming
 {
 	background-color: rgba(0, 0, 0, 0.9);
-    height: 100%;
-	display:none;
-	margin-right:5%;
+	height: 32%;
+	display: none;
+	margin-right: 5%;
+	border-radius: 8px;;
 }
 .stredming-header
 {
@@ -93,9 +94,10 @@ body
 }
 .stredming-header h1
 {
-	margin:0;
-	padding:4% 5%;
-	font-size:150%;
+	margin: 0;
+	padding: .5% .5%;
+	font-size: 175%;
+	font-weight: 500;
 }
 .stredming-results
 {
@@ -105,9 +107,8 @@ body
 }
 .result
 {
-	height:45%;
-	padding: 3%;
-	color:white;
+	height: 72%;
+	padding: 0%;
 }
 .stredm-logo
 {
@@ -123,7 +124,8 @@ body
 .stredm-panel
 {
 	background-color: rgba(0,0,0,.9);
-	height:100%;
+	height: 100%;
+	border-radius: 11px;
 }
 .stredm-select-container
 {
