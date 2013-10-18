@@ -197,7 +197,7 @@ input[type=text]
 .stredming-container
 {
 	display:none;
-	height:50%;
+	height:33%;
 }
 .stredm-logo
 {
@@ -206,10 +206,15 @@ input[type=text]
 .stredming
 {
 	margin-right:0;
+	height:100%;
+}
+.stredming-results
+{
+	height:80%;
 }
 .result
 {
-	height:85%;
+	height:100%;
 }
 
 
