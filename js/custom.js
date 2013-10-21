@@ -19,7 +19,6 @@ $(document).ready( function() {
 	$("input[id='events']").blur(function(){
 		getEventTags();
 	});
-
 	var getArtistTags = function() {
 		var eventSelection = $("#artists").val();
 		var postdata = { event:eventSelection };
@@ -40,7 +39,11 @@ $(document).ready( function() {
 	$("input[id='events']").blur(function(){
 		getArtistTags();
 	});
-
+	$("input[type='text']").autocomplete({
+		minLength: 0
+	}).focus(function() {
+		$(this).autocomplete("search", "");
+	});
 	$("button.stredm-panel-button").click(function(){
 		var eventSelection = $("input[id='events']").val();
 		var artistSelection = $("input[id='artists']").val();
