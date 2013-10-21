@@ -42,6 +42,9 @@ $(document).ready( function() {
 	$("input[type='text']").autocomplete({
 		minLength: 0
 	}).focus(function() {
+		getArtistTags();
+		getEventTags();
+		$(this).select();
 		$(this).autocomplete("search", "");
 	});
 	$("button.stredm-panel-button").click(function(){
