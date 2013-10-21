@@ -205,6 +205,17 @@ input[type=text]
 {
 	height:100%;
 }
+.links-menu 
+{
+	margin: 0;
+}
 
+}
 
+@media only screen and (max-width: 970px) 
+{
+.stredm-panel-container
+{
+	font-size: 74%;
+}
 }
