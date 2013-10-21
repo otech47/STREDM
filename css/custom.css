@@ -176,6 +176,12 @@ input[type=text]
 {
 	right:0%;
 	padding: 1% 1% 0;
+	font-size: 51.5%;
+}
+.top-menu
+{
+	font-size: 170%;
+	margin: 0;
 }
 .stredming-container
 {
