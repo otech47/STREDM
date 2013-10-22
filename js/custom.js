@@ -9,18 +9,15 @@ $(document).ready( function() {
 			success: function(data) 
 			{
 				var autocompleteData = JSON.parse(data);
-				$("#events").autocomplete({
+				$("input[id='events']").autocomplete({
 					source: autocompleteData
 				});
 			}
 		});
 	};
-	getEventTags();
-	$("input[id='events']").blur(function(){
-		getEventTags();
-	});
+	
 	var getArtistTags = function() {
-		var eventSelection = $("#artists").val();
+		var eventSelection = $("input[id='events']").val();
 		var postdata = { event:eventSelection };
 		jQuery.ajax({
 			type: "POST",
@@ -29,15 +26,29 @@ $(document).ready( function() {
 			success: function(data) 
 			{
 				var autocompleteData = JSON.parse(data);
-				$("#artists").autocomplete({
+				$("input[id='artists']").autocomplete({
 					source: autocompleteData
 				});
 			}
 		});
 	};
-	getArtistTags();
+	getEventTags();
 	$("input[id='events']").blur(function(){
+		getEventTags();
 		getArtistTags();
+	});
+	getArtistTags();
+	$("input[id='artists']").blur(function(){
+		getArtistTags();
+		getEventTags();
+	});
+	$("input[id='artists']").on("autocompleteselect", function(){
+		getArtistTags();
+		getEventTags();
+	});
+	$("input[id='events']").on("autocompleteselect", function(){
+		getArtistTags();
+		getEventTags();
 	});
 	$("input[type='text']").autocomplete({
 		minLength: 0
