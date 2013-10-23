@@ -58,6 +58,18 @@ $(document).ready( function() {
 		$(this).select();
 		$(this).autocomplete("search", "");
 	});
+	$("#events").keyup(function(event){
+		if(event.keyCode == 13) 
+		{
+			$("button.stredm-panel-button").click();
+		}
+	});
+	$("#artists").keyup(function(event){
+		if(event.keyCode == 13) 
+		{
+			$("button.stredm-panel-button").click();
+		}
+	});
 	$("button.stredm-panel-button").click(function(){
 		var eventSelection = $("input[id='events']").val();
 		var artistSelection = $("input[id='artists']").val();
