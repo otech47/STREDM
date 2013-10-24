@@ -15,7 +15,6 @@ $(document).ready( function() {
 			}
 		});
 	};
-	
 	var getArtistTags = function() {
 		var eventSelection = $("input[id='events']").val();
 		var postdata = { event:eventSelection };
@@ -33,11 +32,11 @@ $(document).ready( function() {
 		});
 	};
 	getEventTags();
+	getArtistTags();
 	$("input[id='events']").blur(function(){
 		getEventTags();
 		getArtistTags();
 	});
-	getArtistTags();
 	$("input[id='artists']").blur(function(){
 		getArtistTags();
 		getEventTags();
