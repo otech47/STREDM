@@ -1,5 +1,6 @@
 $(document).ready( function() {
-	var getEventTags = function() {
+	function getEventTags()
+	{
 		var artistSelection = $("input[id='artists']").val();
 		var postdata = { artist:artistSelection };
 		jQuery.ajax({
@@ -12,10 +13,13 @@ $(document).ready( function() {
 				$("input[id='events']").autocomplete({
 					source: autocompleteData
 				});
+				$("#events").select();
+				$("#events").autocomplete("search", "");
 			}
 		});
-	};
-	var getArtistTags = function() {
+	}
+	function getArtistTags()
+	{
 		var eventSelection = $("input[id='events']").val();
 		var postdata = { event:eventSelection };
 		jQuery.ajax({
@@ -28,34 +32,20 @@ $(document).ready( function() {
 				$("input[id='artists']").autocomplete({
 					source: autocompleteData
 				});
+				$("#artists").select();
+				$("#artists").autocomplete("search", "");
 			}
 		});
-	};
-	getEventTags();
-	getArtistTags();
-	$("input[id='events']").blur(function(){
-		getEventTags();
-		getArtistTags();
-	});
-	$("input[id='artists']").blur(function(){
-		getArtistTags();
-		getEventTags();
-	});
-	$("input[id='artists']").on("autocompleteselect", function(){
-		getArtistTags();
-		getEventTags();
-	});
-	$("input[id='events']").on("autocompleteselect", function(){
-		getArtistTags();
-		getEventTags();
-	});
-	$("input[type='text']").autocomplete({
+	}
+	$("#artists").autocomplete({
 		minLength: 0
-	}).focus(function() {
+	}).click(function() {
 		getArtistTags();
+	});
+	$("#events").autocomplete({
+		minLength: 0
+	}).click(function() {
 		getEventTags();
-		$(this).select();
-		$(this).autocomplete("search", "");
 	});
 	$("#events").keyup(function(event){
 		if(event.keyCode == 13) 
