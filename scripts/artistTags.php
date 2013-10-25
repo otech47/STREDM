@@ -24,7 +24,7 @@ while($eventRow = mysqli_fetch_array($result))
 	$resultArray[$i] = $eventRow[0];
 	$i++;
 }
-
+sort($resultArray);
 echo json_encode($resultArray);
 
 ?>
