@@ -142,7 +142,7 @@ body
 	color: #FFFFFF;
 	line-height: 310%;
 	text-align: center;
-	font-size: 1.55em;
+	font-size: 2em;
 }
 .button-container
 {
@@ -212,7 +212,7 @@ input[type=text]
 
 }
 
-@media only screen and (max-width: 970px) 
+@media only screen and (max-width: 1200px) 
 {
 .stredm-panel-container
 {
