@@ -28,6 +28,7 @@ body
 {
     font-size: 243%;
     margin: 0;
+	box-shadow: 0 0 5px 3px #484848;
 }
 .site-name
 {
@@ -48,6 +49,7 @@ body
 	background-size: 105% 105%;
 	background-position: -110% 0%;
 	margin: 2.5% 0 0 0;
+	padding: 0 1.35%;
 }
 
 .content-bg
