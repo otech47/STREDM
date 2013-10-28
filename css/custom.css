@@ -145,9 +145,10 @@ body
 .instructions-container
 {
 	color: #FFFFFF;
-	line-height: 310%;
+	line-height: 300%;
 	text-align: center;
 	font-size: 2.2em;
+	height:48%;
 }
 .button-container
 {
