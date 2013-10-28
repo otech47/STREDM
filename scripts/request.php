@@ -77,7 +77,7 @@ if($isResultEmpty)
 if(!empty($resultArray))
 {
 	$j = rand(0, count($resultArray)-1);
-	$returnResult = "<iframe width='100%' height='100%' scrolling='no' frameborder='no' src=".stripslashes($resultArray[$j])."&amp;auto_play=true&amp;show_user=false"."></iframe>";
+	$returnResult = "<iframe id='current-result' width='100%' height='100%' scrolling='no' frameborder='no' src=".stripslashes($resultArray[$j])."&amp;auto_play=true&amp;show_user=false"."></iframe>";
 	echo $returnResult;
 }
 else

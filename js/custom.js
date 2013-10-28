@@ -80,4 +80,5 @@ $(document).ready( function() {
 			}
 		});
 	});
+	var SCwidget = SC.Widget(iframe#current-result);
 });
