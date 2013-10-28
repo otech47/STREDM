@@ -150,10 +150,10 @@ body
 {
 	text-align:center;
 }
-@font-family-base 
+@font-face 
 {
 	font-family:'test';
-	src:url('test.otf');
+	src:url('../fonts/test.otf');
 }
 .ui-autocomplete {
 	max-height: 200px;
