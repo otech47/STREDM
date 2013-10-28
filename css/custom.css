@@ -131,9 +131,12 @@ body
 }
 .select-text
 {
-	padding: 0;
 	color: white;
-	font-size: 152%;
+	font-size: 2.2em;
+	font-family: test;
+	letter-spacing: 2px;
+	margin: -1.5% 0% 1% 0%;
+	padding: 0% 0% 0% 4%;
 }
 .select-form
 {
